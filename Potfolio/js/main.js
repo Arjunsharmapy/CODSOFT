@@ -75,7 +75,7 @@ function updateText() {
   if (index < text.length - 1) {
     element.innerText = text.substring(0, index + 1) + "_";
     index++;
-    setTimeout(updateText, 300);
+    setTimeout(updateText, 300 - index * 10);
   } else {
     element.innerText = text;
     setTimeout(hideLastChar, 500);
